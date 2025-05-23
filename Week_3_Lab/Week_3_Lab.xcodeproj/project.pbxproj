@@ -17,6 +17,8 @@
 		8BA7FAAE2DE111F1001589CA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7FAAC2DE111F1001589CA /* Car.swift */; };
 		8BA7FAAF2DE111F1001589CA /* FileStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7FAAD2DE111F1001589CA /* FileStructure.swift */; };
 		8BA7FAB12DE112D4001589CA /* ListExample1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7FAB02DE112D4001589CA /* ListExample1.swift */; };
+		8BA7FAB32DE120A3001589CA /* ListEample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7FAB22DE120A3001589CA /* ListEample2.swift */; };
+		8BA7FAB62DE12262001589CA /* CarListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7FAB52DE12262001589CA /* CarListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		8BA7FAAC2DE111F1001589CA /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		8BA7FAAD2DE111F1001589CA /* FileStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileStructure.swift; sourceTree = "<group>"; };
 		8BA7FAB02DE112D4001589CA /* ListExample1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExample1.swift; sourceTree = "<group>"; };
+		8BA7FAB22DE120A3001589CA /* ListEample2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEample2.swift; sourceTree = "<group>"; };
+		8BA7FAB52DE12262001589CA /* CarListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				8BA7FA862DE10EA6001589CA /* Assets.xcassets */,
 				8BA7FAB02DE112D4001589CA /* ListExample1.swift */,
 				8BA7FA882DE10EA6001589CA /* Preview Content */,
+				8BA7FAB22DE120A3001589CA /* ListEample2.swift */,
+				8BA7FAB52DE12262001589CA /* CarListItem.swift */,
 			);
 			path = Week_3_Lab;
 			sourceTree = "<group>";
@@ -270,7 +276,9 @@
 				8BA7FA832DE10EA4001589CA /* Week_3_LabApp.swift in Sources */,
 				8BA7FAAE2DE111F1001589CA /* Car.swift in Sources */,
 				8BA7FAB12DE112D4001589CA /* ListExample1.swift in Sources */,
+				8BA7FAB32DE120A3001589CA /* ListEample2.swift in Sources */,
 				8BA7FAAF2DE111F1001589CA /* FileStructure.swift in Sources */,
+				8BA7FAB62DE12262001589CA /* CarListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

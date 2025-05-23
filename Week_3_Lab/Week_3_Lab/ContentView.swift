@@ -13,20 +13,12 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            DatePicker("BirthDate: ", 
-                       selection: $birthDate,
-                       in: ...Calendar.current.date(byAdding: .year, value: -16, to: Date.now)!,
-                       displayedComponents: .date)
-            .datePickerStyle(.compact) //
-            
-            Text("BirthDate: \(birthDate)")
-            
             ListExample1()
+            //ListEample2()
         } // V Stack
         .padding()
     }
 }
-
 #Preview {
     ContentView()
 }

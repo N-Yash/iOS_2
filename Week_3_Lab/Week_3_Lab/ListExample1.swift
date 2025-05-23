@@ -17,23 +17,7 @@ struct ListExample1: View {
             
             List{
                 ForEach(searchCar(searchItem: searchCarModel)) { car in
-                    HStack{
-                        
-                        VStack(alignment: .leading){
-                            Text(car.model)
-                                .font(.headline)
-                            Text(car.make)
-                                .font(.subheadline)
-                        }
-                        Spacer()
-                        Image(systemName: car.isFavorite ? "star.fill" : "star")
-                    } //HStake
-                    .onTapGesture {
-                        print("Tapped Gesture: \(car.model)")
-                    }
-                    .onLongPressGesture {
-                        print("Long Tapped: \(car.model)")
-                    }
+                    CarListItem(car: car)
                 } //For Each
                 .onMove{source, destination in
                    cars.move(fromOffsets: source, toOffset: destination)
@@ -41,8 +25,15 @@ struct ListExample1: View {
                 .onDelete(perform: { indexSet in
                     cars.remove(atOffsets: indexSet)
                 })
+                .listRowBackground(
+                        Capsule()
+                            .fill(Color.gray)
+                            .padding(3)
+                )
             } //List
             .searchable(text: $searchCarModel, prompt: "Search Car Model")
+            .listStyle(.sidebar)
+            
             
             .navigationTitle("Interactive List")
             .navigationBarTitleDisplayMode(.inline)
