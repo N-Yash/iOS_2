@@ -35,7 +35,7 @@ struct ListExample1: View {
             .listStyle(.sidebar)
             
             
-            .navigationTitle("Interactive List")
+            .navigationTitle("Yash Naik")
             .navigationBarTitleDisplayMode(.inline)
         } //Nav
         
