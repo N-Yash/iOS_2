@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var birthDate : Date = Date.now
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
+            DatePicker("BirthDate: ", 
+                       selection: $birthDate,
+                       in: ...Calendar.current.date(byAdding: .year, value: -16, to: Date.now)!,
+                       displayedComponents: .date)
+            .datePickerStyle(.compact) //
+            
+            Text("BirthDate: \(birthDate)")
+            
+            ListExample1()
+        } // V Stack
         .padding()
     }
 }
