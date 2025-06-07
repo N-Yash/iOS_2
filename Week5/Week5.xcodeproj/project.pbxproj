@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B3BEF7E2DF3B690002B2BFD /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BEF7D2DF3B690002B2BFD /* ProfileScreen.swift */; };
+		8B3BEF802DF3B6A7002B2BFD /* RecordsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BEF7F2DF3B6A7002B2BFD /* RecordsScreen.swift */; };
 		8BE135A12DF379C8001D551D /* Week5App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE135A02DF379C8001D551D /* Week5App.swift */; };
 		8BE135A32DF379C8001D551D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE135A22DF379C8001D551D /* ContentView.swift */; };
 		8BE135A52DF379CA001D551D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE135A42DF379CA001D551D /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B3BEF7D2DF3B690002B2BFD /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		8B3BEF7F2DF3B6A7002B2BFD /* RecordsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsScreen.swift; sourceTree = "<group>"; };
 		8BE1359D2DF379C8001D551D /* Week5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE135A02DF379C8001D551D /* Week5App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week5App.swift; sourceTree = "<group>"; };
 		8BE135A22DF379C8001D551D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				8BE135CE2DF37AEB001D551D /* HomeScreen.swift */,
 				8BE135D02DF37C6B001D551D /* SignUpScreen.swift */,
 				8BE135D22DF37C80001D551D /* AuthFlow.swift */,
+				8B3BEF7D2DF3B690002B2BFD /* ProfileScreen.swift */,
+				8B3BEF7F2DF3B6A7002B2BFD /* RecordsScreen.swift */,
 			);
 			path = Week5;
 			sourceTree = "<group>";
@@ -279,6 +285,8 @@
 				8BE135CB2DF379EA001D551D /* User.swift in Sources */,
 				8BE135D12DF37C6B001D551D /* SignUpScreen.swift in Sources */,
 				8BE135D32DF37C80001D551D /* AuthFlow.swift in Sources */,
+				8B3BEF7E2DF3B690002B2BFD /* ProfileScreen.swift in Sources */,
+				8B3BEF802DF3B6A7002B2BFD /* RecordsScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

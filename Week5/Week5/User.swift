@@ -7,14 +7,26 @@
 
 import Foundation
 
-class User {
+class User : ObservableObject{
     
-    private var email : String
-    private var password : String
+    @Published var name : String
+    @Published var email : String
+    @Published var history : String
+    @Published var allergy : String
     
-    init(email: String, password: String) {
+    init(name: String, email: String, history: String, allergy: String) {
+        self.name = name
         self.email = email
-        self.password = password
+        self.history = history
+        self.allergy = allergy
     }
     
+    init()
+    {
+        self.name = "NA"
+        self.email = "NA"
+        self.history = "NA"
+        self.allergy = "NA"
+    }
+
 }

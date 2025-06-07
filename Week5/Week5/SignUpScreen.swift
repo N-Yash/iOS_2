@@ -9,23 +9,58 @@ import SwiftUI
 
 struct SignUpScreen: View {
     
-    @State private var email : String = "e@mial.com"
-    @State private var password : String = "password"
+    @State private var name : String = "Yash Naik"
+    @State private var email : String = "yashnaik@mail.com"
+    @State private var histroy : String = "No History"
+    @State private var allergy : String = "Dairy"
+    
+    @Binding var authFlow: AuthFlow
+    
+    @EnvironmentObject var user : User
     
     var body: some View {
         NavigationStack{
             Form{
-                TextField("Enter Email", text: $email)
-                SecureField("Enter Password", text: $password)
-                Button("Create an Account"){}
+                Section("Name"){
+                    TextField("Enter Name", text: $name)
+                }
+                
+                Section("E - Mail"){
+                    TextField("Enter Email", text: $email)
+                }
+                
+                Section("Madical History"){
+                    SecureField("Enter Medical History", text: $histroy)
+                }
+                
+                Section("Allergy"){
+                    SecureField("Enter Allergy", text: $allergy)
+                }
+                
+                Button("Create an Account"){
+                    user.name = name
+                    user.email = email
+                    user.history = histroy
+                    user.allergy =  allergy
+                    
+                    authFlow = .home
+                }
+                .onAppear(){
+                    name = user.name
+                    email = user.email
+                    histroy = user.history
+                    allergy = user.allergy
+                }
             }
+            .navigationTitle("Yash Naik | Sign Up")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("SignIn")
-        .navigationBarTitleDisplayMode(.inline)
+        
         
     }
 }
 
 #Preview {
-    SignUpScreen()
+    SignUpScreen(authFlow: .constant(.signUp))
+        .environmentObject(User(name: "Example", email: "sample@apple.com", history: "No History", allergy: "Dairy"))
 }

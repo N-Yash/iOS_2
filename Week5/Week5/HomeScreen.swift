@@ -9,13 +9,31 @@ import SwiftUI
 
 struct HomeScreen: View {
     
-    @Binding private var authFlow : AuthFlow
+    @Binding var authFlow: AuthFlow
+    @State private var showProfile : Bool = false
+    @State private var showRecords : Bool = false
+    
+    @EnvironmentObject var user : User
     
     var body: some View {
         NavigationStack{
             VStack{
-                Text("Welcome, ")
+                Text("Welcome, \(user.name)")
                 Spacer()
+                
+                Form {
+                    Section("E - Mail"){
+                        Text(user.email)
+                    }
+                    
+                    Section("Medical Histroy"){
+                        Text(user.history)
+                    }
+                    
+                    Section("Allergy"){
+                        Text(user.allergy)
+                    }
+                }
             }
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
@@ -23,23 +41,30 @@ struct HomeScreen: View {
                 ToolbarItem(placement: .topBarTrailing){
                     Menu{
                         Button("Profile"){
-                            
+                            showProfile = true
                         }//btn
-                        Button("Account"){
-                            
+                        Button("Recoards"){
+                            showRecords = true
                         }//btn
                         Button("Logout"){
-                            
+                            authFlow = .signIn
                         }//btn
                     }label: {
                         Image(systemName: "gear")
                     }
                 }//bar item
             }//
+            .navigationDestination(isPresented: $showProfile){
+                ProfileScreen().environmentObject(user)
+            }
+            .navigationDestination(isPresented: $showRecords){
+                RecordsScreen().environmentObject(user)
+            }
         }//navigation
     }//body
 }
 
 #Preview {
-    HomeScreen()
+    HomeScreen(authFlow: .constant(.home))
+        .environmentObject(User(name: "Example", email: "sample@apple.com", history: "No History", allergy: "Dairy"))
 }

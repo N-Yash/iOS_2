@@ -11,4 +11,6 @@ enum AuthFlow{
     case signIn
     case signUp
     case home
+    case profile
+    case records
 }
