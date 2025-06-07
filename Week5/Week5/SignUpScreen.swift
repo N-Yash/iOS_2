@@ -30,11 +30,11 @@ struct SignUpScreen: View {
                 }
                 
                 Section("Madical History"){
-                    SecureField("Enter Medical History", text: $histroy)
+                    TextField("Enter Medical History", text: $histroy)
                 }
                 
                 Section("Allergy"){
-                    SecureField("Enter Allergy", text: $allergy)
+                    TextField("Enter Allergy", text: $allergy)
                 }
                 
                 Button("Create an Account"){
