@@ -21,6 +21,8 @@
 		8BE135CF2DF37AEB001D551D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE135CE2DF37AEB001D551D /* HomeScreen.swift */; };
 		8BE135D12DF37C6B001D551D /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE135D02DF37C6B001D551D /* SignUpScreen.swift */; };
 		8BE135D32DF37C80001D551D /* AuthFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE135D22DF37C80001D551D /* AuthFlow.swift */; };
+		8BEB5F5E2DFCC332005A5C73 /* LibraryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB5F5D2DFCC332005A5C73 /* LibraryPicker.swift */; };
+		8BEB5F602DFCCC50005A5C73 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB5F5F2DFCCC50005A5C73 /* CameraPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		8BE135CE2DF37AEB001D551D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		8BE135D02DF37C6B001D551D /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		8BE135D22DF37C80001D551D /* AuthFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlow.swift; sourceTree = "<group>"; };
+		8BEB5F5D2DFCC332005A5C73 /* LibraryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPicker.swift; sourceTree = "<group>"; };
+		8BEB5F5F2DFCCC50005A5C73 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 				8BE135D22DF37C80001D551D /* AuthFlow.swift */,
 				8B3BEF7D2DF3B690002B2BFD /* ProfileScreen.swift */,
 				8B3BEF7F2DF3B6A7002B2BFD /* RecordsScreen.swift */,
+				8BEB5F5D2DFCC332005A5C73 /* LibraryPicker.swift */,
+				8BEB5F5F2DFCCC50005A5C73 /* CameraPicker.swift */,
 			);
 			path = Week5;
 			sourceTree = "<group>";
@@ -279,7 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BE135A32DF379C8001D551D /* ContentView.swift in Sources */,
+				8BEB5F5E2DFCC332005A5C73 /* LibraryPicker.swift in Sources */,
 				8BE135CF2DF37AEB001D551D /* HomeScreen.swift in Sources */,
+				8BEB5F602DFCCC50005A5C73 /* CameraPicker.swift in Sources */,
 				8BE135CD2DF37A72001D551D /* SignInScreen.swift in Sources */,
 				8BE135A12DF379C8001D551D /* Week5App.swift in Sources */,
 				8BE135CB2DF379EA001D551D /* User.swift in Sources */,
@@ -452,6 +460,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Week5/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Week 5 App needs to access Camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Week 5 App need to access Photo Liberary";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -480,6 +491,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Week5/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Week 5 App needs to access Camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Week 5 App need to access Photo Liberary";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
